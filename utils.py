@@ -551,7 +551,7 @@ async def get_verify_shorted_link(link):
         https = "https"
         link = link.replace("http", https)
 
-    if URL == "api.shareus.in":
+    if URL == "api.shareus.io":
         url = f"https://{URL}/shortLink"
         params = {"token": API,
                   "format": "json",
