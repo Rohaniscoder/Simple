@@ -60,6 +60,11 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MOVIES_SERIES_GROUPS')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cinema_Moviesz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Join Channels Also ')
+
+UPDT_CHNL = environ.get('UPDT_CHNL', 'https://t.me/Cinema_Moviesz')
+MY_CHNL = environ.get('MY_CHNL', 'https://t.me/Cinema_Moviesz')
+MY_GRP = environ.get('MY_GRP', 'https://t.me/Cinema_Moviesz')
+
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001814178865')) 
 REQUEST_LOGS = int(environ.get('REQUEST_LOGS', '-1001987471827'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MOVIES_SERIES_GROUPS')
