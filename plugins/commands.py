@@ -145,8 +145,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=MY_CHNL)
-                         ]
+                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=f't.me/Cinema_Moviesz')
+                  ]
                         ]
                     )
                 )
@@ -161,7 +161,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=MY_CHNL)
+                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=f't.me/Cinema_Moviesz')
                          ]
                         ]
                     )
@@ -229,7 +229,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=MY_CHNL)
+                      InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=f't.me/Cinema_Moviesz')
                      ]
                     ]
                 )
@@ -269,7 +269,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=MY_CHNL)
+              InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=f't.me/Cinema_Moviesz')
              ]
             ]
         )
