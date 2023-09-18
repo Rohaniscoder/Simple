@@ -161,7 +161,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/Cinema_Moviesz')
+                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=MY_CHNL)
                          ]
                         ]
                     )
