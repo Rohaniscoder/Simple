@@ -27,7 +27,7 @@ async def start(client, message):
             [
                 InlineKeyboardButton('🎭 ᴍʏ ɢʀᴏᴜᴘ 🎭', url=MY_CHNL),
               
-                InlineKeyboardButton('🔰 ᴍʏ ᴄʜᴀɴɴᴇʟ 🔰', url=MY_GRP),
+                InlineKeyboardButton('🔰 ᴍʏ ᴄʜᴀɴɴᴇʟ 🔰', url=MY_GRP)
             ],[
                     InlineKeyboardButton('🔱 ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ 🔱',url=UPDT_CHNL)
                   ]]
