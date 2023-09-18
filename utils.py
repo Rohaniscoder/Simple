@@ -476,7 +476,7 @@ async def get_shortlink(chat_id, link):
     if "http" == https: #if https == "http":
         https = "https"
         link = link.replace("http", https) #replacing http to https
-    if URL == "easysky.in":
+    if URL == "api.shareus.in":
         url = f'https://{URL}/shortLink'
         params = {
             "token": API,
@@ -509,10 +509,16 @@ async def get_shortlink(chat_id, link):
                         return data["shortenedUrl"]
                     else:
                         logger.error(f"Error: {data['message']}")
-                        return f'https://{URL}/api?api={API}&link={link}'
+                        if URL == 'clicksfly.com':
+                            return f'https://{URL}/api?api={API}&url={link}'
+                        else:
+                            return f'https://{URL}/api?api={API}&link={link}'
         except Exception as e:
             logger.error(e)
-            return f'https://{URL}/api?api={API}&link={link}'
+            if URL == 'clicksfly.com':
+                return f'https://{URL}/api?api={API}&url={link}'
+            else:
+                return f'https://{URL}/api?api={API}&link={link}'
 
 async def get_verify_shorted_link(link):
     API = SHORTLINK_API
