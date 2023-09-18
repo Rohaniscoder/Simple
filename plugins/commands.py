@@ -53,24 +53,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],
-            [
-                InlineKeyboardButton('👉 ᴍᴄᴜ', url=f"https://t.me/Marvel_Studios_Moviesz"),
-              
-                InlineKeyboardButton('ᴅᴄ 👈', url=f"https://t.me/Dc_Moviesz"),
-            ],
-            [
-                InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
-                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/MOVIES_SERIES_GROUPS"),
-                
-            ], 
-            [
-                    InlineKeyboardButton('👉 ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈', callback_data='about')
-                ],[
-                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʟɪɴᴋs / ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/UNKNOWN_MAN_ON_MISSION')
-                  ]]
+                InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('🎭 ᴍʏ ɢʀᴏᴜᴘ 🎭', url=MY_GRP),              
+                InlineKeyboardButton('🔰 ᴍʏ ᴄʜᴀɴɴᴇʟ🔰', url=MY_CHNL)
+            ],[ InlineKeyboardButton('🔱 ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔱', url=UPDT_CHNL)] ]
+        
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -109,24 +97,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],
-            [
-                InlineKeyboardButton('👉 ᴍᴄᴜ', url=f"https://t.me/Marvel_Studios_Moviesz"),
-              
-                InlineKeyboardButton('ᴅᴄ 👈', url=f"https://t.me/Dc_Moviesz"),
-            ],
-            [
-                InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
-                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/MOVIES_SERIES_GROUPS"),
-                
-            ], 
-            [
-                    InlineKeyboardButton('👉 ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈', callback_data='about')
-                ],[
-                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʟɪɴᴋs / ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/UNKNOWN_MAN_ON_MISSION')
-                  ]]
+                InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('🎭 ᴍʏ ɢʀᴏᴜᴘ 🎭', url=MY_GRP),              
+                InlineKeyboardButton('🔰 ᴍʏ ᴄʜᴀɴɴᴇʟ🔰', url=MY_CHNL)
+            ],[ InlineKeyboardButton('🔱 ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔱', url=UPDT_CHNL)] ]
+        
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
