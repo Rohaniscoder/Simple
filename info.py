@@ -49,7 +49,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 
-VERIFY = bool(environ.get('VERIFY',False))
+VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'easysky.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'af77f68713ff5ec1e9e7a2b843cc29e85ceb855a')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
