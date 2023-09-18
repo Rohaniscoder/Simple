@@ -145,7 +145,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url='CHNL_LINK')
+                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url=MY_CHNL)
                          ]
                         ]
                     )
