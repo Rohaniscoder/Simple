@@ -913,24 +913,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],
-            [
-                InlineKeyboardButton('👉 ᴍᴄᴜ', url=f"https://t.me/Marvel_Studios_Moviesz"),
-              
-                InlineKeyboardButton('ᴅᴄ 👈', url=f"https://t.me/Dc_Moviesz"),
-            ],
-            [
-                InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
-                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/MOVIES_SERIES_GROUPS"),
-                
-            ], 
-            [
-                    InlineKeyboardButton('👉 ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈', callback_data='about')
-                ],[
-                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʟɪɴᴋs / ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/UNKNOWN_MAN_ON_MISSION')
-                  ]]
+                InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('🎭 ᴍʏ ɢʀᴏᴜᴘ 🎭', url=MY_GRP),              
+                InlineKeyboardButton('🔰 ᴍʏ ᴄʜᴀɴɴᴇʟ🔰', url=MY_CHNL)
+            ],[ InlineKeyboardButton('🔱 ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔱', url=UPDT_CHNL)] ]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
