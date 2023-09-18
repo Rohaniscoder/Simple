@@ -63,6 +63,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cinema_Moviesz')
 MY_CHNL = environ.get('MY_CHNL', 'https://t.me/Cinema_Moviesz')
 MY_GRP = environ.get('MY_GRP', 'https://t.me/MOVIES_SERIES_GROUPS')
 UPDT_CHNL = environ.get('UPDT_CHNL', 'https://t.me/MOVIES_SERIES_GROUPS')
+BOT_ONWR = environ.get('BOT_ONWR', 'https://t.me/UNKNOWN_MAN_ON_MISSION')
 
 
 MSG_ALRT = environ.get('MSG_ALRT', 'Join Channels Also ')
