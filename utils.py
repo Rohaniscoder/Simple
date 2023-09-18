@@ -1,6 +1,6 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
-from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, IS_SHORTLINK, LOG_CHANNEL, TUTORIAL, GRP_LNK, CHNL_LNK, CUSTOM_FILE_CAPTION, HOW_TO_VERIFY
+from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, IS_SHORTLINK, LOG_CHANNEL, GRP_LNK, CHNL_LNK, CUSTOM_FILE_CAPTION, HOW_TO_VERIFY
 from imdb import Cinemagoer 
 import asyncio
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
@@ -519,17 +519,6 @@ async def get_shortlink(chat_id, link):
         link = await shortzy.convert(link)
         return link
    
-async def get_tutorial(chat_id):
-    settings = await get_settings(chat_id) #fetching settings for group
-    if 'tutorial' in settings.keys():
-        if settings['is_tutorial']:
-            TUTORIAL_URL = settings['tutorial']
-        else:
-            TUTORIAL_URL = TUTORIAL
-    else:
-        TUTORIAL_URL = TUTORIAL
-    return TUTORIAL_URL
-        
 async def get_verify_shorted_link(link):
     API = SHORTLINK_API
     URL = SHORTLINK_URL
@@ -545,7 +534,7 @@ async def get_verify_shorted_link(link):
                   "link": link,
                   }
         try:
-            async with aiohttp.ClientSession() as session:
+            async with aiohttp.ClientSession( as session:
                 async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
                     data = await response.json(content_type="text/html")
                     if data["status"] == "success":
