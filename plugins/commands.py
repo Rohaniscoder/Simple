@@ -750,7 +750,7 @@ async def deletemultiplefiles(bot, message):
 async def shortlink(bot, message):
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\nIf you want to connect your shortner & api with this bot in your groups then contact @Syrus_143_Hpy.</b>")
+        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\nIf you want to connect your shortner & api with this bot in your groups then contact @UNKNOWN_MAN_ON_MISSION.</b>")
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
