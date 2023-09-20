@@ -64,6 +64,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'Join Channels Also ')
 UPDT_CHNL = environ.get('UPDT_CHNL', 'https://t.me/Cinema_Moviesz')
 MY_CHNL = environ.get('MY_CHNL', 'https://t.me/Cinema_Moviesz')
 MY_GRP = environ.get('MY_GRP', 'https://t.me/Cinema_Moviesz')
+HOW_TO_DWNLD  = environ.get('HOW_TO_DWNLD', 'https://t.me/+PkQmIhZMVDxhZmVl')
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001817707448')) 
 REQUEST_LOGS = int(environ.get('REQUEST_LOGS', '-1001817707448'))
