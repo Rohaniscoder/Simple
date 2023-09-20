@@ -57,8 +57,6 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 PORT = environ.get("PORT", "8080")
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MOVIES_SERIES_GROUPS')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cinema_Moviesz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Join Channels Also ')
 
 UPDT_CHNL = environ.get('UPDT_CHNL', 'https://t.me/Cinema_Moviesz')
