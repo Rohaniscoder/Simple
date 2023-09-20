@@ -1,14 +1,6 @@
-<p align="center">
-  <img src="https://telegra.ph/file/94c74580a918cb9e6b18e.jpg" alt="Eva Maria Logo">
-</p>
-<h1 align="center">
-  <b>Nataliya Bot</b>
-</h1>
 
 ## Deploy
 You can deploy this bot anywhere.
-
-<i>**[Watch Deploying Tutorial...](https://t.me/TVSeriesCw)**</i>
 
 <details><summary>Deploy To Heroku</summary>
 <p>
